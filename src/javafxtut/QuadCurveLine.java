@@ -65,6 +65,28 @@ public class QuadCurveLine extends Application {
 //        face.setRadiusY(45);
         root.getChildren().add(face);
         
+        // eyes 1 
+         Ellipse eye1 = new Ellipse(230,105,8,4);
+       eye1.setStroke(Color.BLACK);
+       eye1.setFill(Color.FLORALWHITE);
+        root.getChildren().add(eye1);
+        
+        // eyes 2
+         Ellipse eye2 = new Ellipse(270,105,8,4);
+       eye2.setStroke(Color.BLACK);
+       eye2.setFill(Color.FLORALWHITE);
+        root.getChildren().add(eye2);
+        
+        //smiley -  similar to the quadcurve
+        QuadCurve smiley = new QuadCurve(230,140,250,150,270,140); // start x,y control x,y, end x,y!
+        smiley.setStroke(Color.BLACK);
+        smiley.setFill(Color.FLORALWHITE);
+        root.getChildren().add(smiley); 
+        
+        // body part - a big circle
+        
+        
+        
         primaryStage.setTitle("Drawing Lines and Quadcurves!");
         primaryStage.setScene(scene);
         primaryStage.show();
